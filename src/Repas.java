@@ -11,7 +11,6 @@ public class Repas {
 	}
 	
 	
-	
 	public void affichagePrixUnitaire() {
 		System.out.println("Son prix est de : " + prix + " Euros. \n");
 		

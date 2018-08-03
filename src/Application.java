@@ -13,19 +13,19 @@ public class Application {
 		Salades salade1 = new Salades();
 		salade1.setNomSalades("Nicoise");
 		salade1.setIngredients("laitue, oeufs, tomates, pommes de terre, banane.");
-		salade1.setPrix(18.90);
+		salade1.setPrix(59.90);
 		
 		Pizza pizza1 = new Pizza();
 		
 		pizza1.setNomPizza("Simple");
 		pizza1.setIngredients("tomates, fromage, basilic, banane.");
-		pizza1.setPrix(20.95);
+		pizza1.setPrix(30.95);
 		
 		Dessert dessert1 = new Dessert();
 		
 		dessert1.setNomDessert("Tiramisu");
 		dessert1.setIngredients("creme fraiche, cafe, chocolat, banane.");
-		dessert1.setPrix(5.95);
+		dessert1.setPrix(10.00);
 		
 		Facturation facture1 = new Facturation();
 		
@@ -47,6 +47,7 @@ public class Application {
 		
 		
 		facture1.calculerTotal(pizza1, dessert1, salade1);
+		facture1.reductionConsommateur();
 
 	}
 
