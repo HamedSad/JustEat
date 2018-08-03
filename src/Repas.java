@@ -10,14 +10,14 @@ public class Repas {
 		
 	}
 	
-	public double calculerTotal(Pizza a, Dessert b, Salades c) {
-		sommeTotale = a.getPrix() + b.getPrix() + c.getPrix();
-		System.out.println("\n\nLa somme totale de votre commande est de : " + sommeTotale + " Euros" );
+	
+	
+	public void affichagePrixUnitaire() {
+		System.out.println("Son prix est de : " + prix + " Euros. \n");
 		
-		return sommeTotale;
 	}
 	public void afficherIngredients() {
-		System.out.println("Ingrédients contenus : " + ingredients + "\n");
+		System.out.println("Ingrédients contenus : " + ingredients);
 	}
 	
 	public void creerRepas() {
