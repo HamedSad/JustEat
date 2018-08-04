@@ -3,6 +3,8 @@ public class Salades extends Repas{
 	
 	String nomSalade;
 	
+	
+	
 	public void typeSalade() {
 		System.out.println("La salade choisie est une : " + nomSalade); 
 			

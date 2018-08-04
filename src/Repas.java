@@ -6,10 +6,6 @@ public class Repas {
 	double prix;
 	double sommeTotale;
 	
-	public void calculPrixTotal() {
-		
-	}
-	
 	
 	public void affichagePrixUnitaire() {
 		System.out.println("Son prix est de : " + prix + " Euros. \n");

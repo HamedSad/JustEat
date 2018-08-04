@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Facturation {
+public class Facturation  {
 	
 	double sommeTotale;
 	
@@ -11,7 +11,7 @@ public class Facturation {
 		return sommeTotale;
 	}
 	
-	public void reductionConsommateur() {
+	public void reductionConsommateur() throws InterruptedException {
 		
 		System.out.println("\nSi vous êtes demandeur d'emploi tapez 1, si vous êtes étudiant tapez 2, sinon tapez 3 :"); 
 		
@@ -21,24 +21,26 @@ public class Facturation {
 		
 		if (reduc == 1) {
 			System.out.println("Vous bénéficiez de 20% de reduction");
-			sommeTotale = sommeTotale - (20/sommeTotale)*100;
-			double sommeTotaleArrondie = (double) Math.round(sommeTotale * 100) / 100;
-			System.out.println("Le montant de votre commande est désormais de : " + sommeTotaleArrondie + " Euros");
+			sommeTotale = sommeTotale - (sommeTotale*0.2);
+			double sommeTotaleArrondie = (double) Math.round(sommeTotale * 100) / 100; 
+			Thread.sleep(1000);
+			System.out.println("\nLe montant de votre commande est désormais de : " + sommeTotaleArrondie + " Euros");
 		}
 		else if(reduc == 2) {
 			System.out.println("Vous bénéficiez de 10% de reduction");
-			sommeTotale = sommeTotale - (10/sommeTotale)*100;
+			sommeTotale = sommeTotale - (sommeTotale*0.10);
 			double sommeTotaleArrondie = (double) Math.round(sommeTotale * 100) / 100;
-			System.out.println("Le montant de votre commande est désormais de : " + sommeTotaleArrondie + " Euros");
+			Thread.sleep(1000);
+			System.out.println("\nLe montant de votre commande est désormais de : " + sommeTotaleArrondie + " Euros");
 		}
 		else if(reduc == 3) {
-			System.out.println("Vous ne bénéficiez pas de réduction\nLe montant total de votre commande est de : " + sommeTotale + " Euros");
+			System.out.println("\nVous ne bénéficiez pas de réduction");
+			Thread.sleep(1000);
+			System.out.println("\nLe montant total de votre commande est de : " + sommeTotale + " Euros");
 		}
 		else {
-			System.out.println("Je n'ai pas compris votre demande");
+			System.out.println("\nJe n'ai pas compris votre demande");
 		}
-		
 		
 	}
 }
-
