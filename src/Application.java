@@ -36,7 +36,6 @@ public class Application {
 		salade1.afficherIngredients();
 		salade1.affichagePrixUnitaire();
 		
-		
 		pizza1.typePizza();
 		pizza1.afficherIngredients();
 		pizza1.affichagePrixUnitaire();
@@ -44,7 +43,6 @@ public class Application {
 		dessert1.typeDessert();
 		dessert1.afficherIngredients();
 		dessert1.affichagePrixUnitaire();
-		
 		
 		facture1.calculerTotal(pizza1, dessert1, salade1);
 		facture1.reductionConsommateur();
