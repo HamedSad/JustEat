@@ -11,19 +11,19 @@ public class Application {
 		
 		Salades salade1 = new Salades();
 		salade1.setNomSalades("Nicoise");
-		salade1.setIngredients("laitue, oeufs, tomates, pommes de terre, banane.");
+		salade1.setIngredients("laitue, oeufs, tomates, pommes de terre.");
 		salade1.setPrix(9.90);
 		
 		Pizza pizza1 = new Pizza();
 		
 		pizza1.setNomPizza("Simple");
-		pizza1.setIngredients("tomates, fromage, basilic, banane.");
+		pizza1.setIngredients("tomates, fromage, basilic.");
 		pizza1.setPrix(13.95);
 		
 		Dessert dessert1 = new Dessert();
 		
 		dessert1.setNomDessert("Tiramisu");
-		dessert1.setIngredients("creme fraiche, cafe, chocolat, banane.");
+		dessert1.setIngredients("creme fraiche, cafe, chocolat.");
 		dessert1.setPrix(5.50);
 		
 		Facturation facture1 = new Facturation();
