@@ -13,11 +13,25 @@ public class Facturation  {
 	
 	public void reductionConsommateur() throws InterruptedException {
 		
+		
+		
 		System.out.println("\nSi vous êtes demandeur d'emploi tapez 1, si vous êtes étudiant tapez 2, "
 				+ "si vous avez un code promo tapez 3, sinon tapez 4 :"); 
 		
+		
 		Scanner var = new Scanner(System.in);
 		int reduc = var.nextInt();
+		
+		while(reduc!=1 && reduc!=2 && reduc!=3 && reduc!=4) {
+			
+			System.out.println("Je n'ai pas compris votre demande");
+			
+			System.out.println("\nSi vous êtes demandeur d'emploi tapez 1, si vous êtes étudiant tapez 2,"
+					+ " si vous avez un code promo tapez 3, sinon tapez 4 :");
+			 var = new Scanner(System.in);
+			 reduc = var.nextInt();
+			}
+
 		
 		
 		if (reduc == 1) {
@@ -48,7 +62,7 @@ public class Facturation  {
 			System.out.println("\nTapez votre code promo");
 			 var2 = new Scanner(System.in);
 			 codeReduc = var2.next();
-			 
+			}
 			 
 			 if(codeReduc.equals("banane50")) {
 					System.out.println("Vous beneficiez de 50% de reduction");
@@ -58,7 +72,7 @@ public class Facturation  {
 					System.out.println("\nLe montant total de votre commande est de : " + sommeTotaleArrondie + " Euros");
 					}		
 				
-			}	
+			
 			
 			
 		}
